@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image-viewer(oops)</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/imageplugin.css">
+    <style>
+    	*{
+
+	        margin: 0;
+	        padding:0;
+        }
+        .container{
+	        padding: 50px;
+	        background-color: #ddd;
+	        width: 80%;
+	        margin: auto;
+	        display: grid;
+	        grid-template-columns: 1fr 1fr 1fr;
+	        column-gap: 10px;
+        }
+        .images img{
+	        width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="images">
+			<img viewbox src="https://picsum.photos/id/215/500/300" alt="hello1">
+		</div>
+		<div class="images">
+			<img viewbox src="https://picsum.photos/id/216/500/300" alt="hello2">
+		</div>
+		<div class="images">
+			<img viewbox src="https://picsum.photos/id/217/500/300" alt="hello3">
+		</div>
+	</div>
+
+	<script src="dist/JS/viewbox.js"></script>
+
+	<script>
+		obj.option({'backgroundOpacity':1,
+             'imageTransTimimg':2,
+             'slideShowTiming' : 2,
+             'disableNavigation' : false,
+             'disableSlideShow' : false,
+             'disableInfo' : false})
+	</script>
+
+</body>
+</html>

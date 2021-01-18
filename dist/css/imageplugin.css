@@ -1,0 +1,91 @@
+
+.images-viewer-model{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition-duration: .5s;
+	display: none;
+	opacity: 0;
+}
+.images-viewer-model .overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index: -1;
+}
+.images-viewer-model .viewer-image{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 900px;
+	width: 90%;
+	max-height: 500px;
+	margin: auto;
+	pointer-events: none;
+}
+.images-viewer-model .viewer-image img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	transition-duration: .3s;
+	opacity: 0;
+}
+.control{
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+	height: 35px;
+	width: 35px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.images-viewer-model .info{
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgba(255,255,255,0.6);
+}
+.images-viewer-model .play-pause{
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	cursor: pointer;
+}
+.images-viewer-model .play-pause img{
+	height: 35px;
+	width: 35px;
+}
+.images-viewer-model .close{
+	position: absolute;
+	top: 20px;
+	left: auto;
+	right: 35px;
+	cursor: pointer;
+}
+.images-viewer-model .close img{
+	height: 28px;
+	width: 28px;
+}
+.images-viewer-model .forward{
+	left: auto;
+    right: 35px;
+}
+.images-viewer-model .forward img{
+	width: 35px;
+	height: 35px;
+}
+.images-viewer-model .backward img{
+	width: 35px;
+	height: 35px;
+}
